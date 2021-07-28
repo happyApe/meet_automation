@@ -48,6 +48,9 @@
 
 ### Running the script : 
 
+    The script will ask you to login once only and then it stores all the cookies of your automated browser to folder named selenium created
+    So from next time, you don't need to login again
+
    ```python
     python3 my_google_meet_manager.py
    ```

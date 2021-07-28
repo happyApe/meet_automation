@@ -2,3 +2,5 @@ class_details.txt
 timetable.csv
 class_schedule.csv
 selenium/
+__pycache__/
+probable_names.txt
