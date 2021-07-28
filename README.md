@@ -85,4 +85,25 @@
 
 - **Otherwise you can use [schedule_it.py](https://github.com/happyApe/meet_automation/blob/master/schedule_it.py)**
 
+### Attend for me : 
+
+You can use the [attend_for_me.py](https://github.com/happyApe/meet_automation/blob/master/attend_for_me.py) to have a the script listen in background
+and notify you whenever your name is called 
+
+**Setup steps**:
+
+- First, run the script with **-s** tag to setup the name list which consists of closely sounding words to your name
+
+    ```python
+    python attend_for_me.py -s 
+    ```
+    > This will generate a probable_names.txt file, which will contain those closely sounding names 
+
+- Now, run the script with no tags whenver you are busy to attend
+
+    ```python
+    python attend_for_me.py 
+    ```
+    > This will notify you with notification (Linux/MacOs) and play a siren sound along with speech output 
+
 

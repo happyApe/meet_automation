@@ -147,7 +147,9 @@ if __name__ == '__main__':
         # call the setup script
         setup()
     else : 
+        # For testing
+        # join_google_meet('meet link here')
+
         # Run the Recognizer 
-        join_google_meet('https://meet.google.com/qae-esqw-ekf')
         keep_check()
 
