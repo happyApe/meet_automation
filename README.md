@@ -6,7 +6,6 @@ if using crontab (Linux) :
 
 ```
 # Sets display environment variable for crontab so that selenium works as without it chrome wont open
-# apparently pop os uses 1, fedora used 0 
 # to find display number, run 
 # env | grep 'DISPLAY'
 DISPLAY=:1
@@ -14,7 +13,6 @@ DISPLAY=:1
 # here 1000 is the usr_id
 # to get usr_id, run : echo $UID
 XDG_RUNTIME_DIR="/run/user/1000"
-
 
 # It also creates a "meet_manager.log" in home directory
 32 8-16 * * 1-5 cd /home/<user>/<path_to_repo>/meet_automation && /usr/bin/python3 /home/<user>/<path_to_repo>/meet_automation/my_google_meet_manager.py >> /home/<user>/meet_manager.log 2>&1 
