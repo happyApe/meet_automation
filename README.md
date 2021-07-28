@@ -48,9 +48,9 @@
 
 ### Running the script : 
 
-    ```python
+   ```python
     python3 my_google_meet_manager.py
-    ```
+   ```
 
    > Running with no tags 
 
