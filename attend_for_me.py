@@ -114,8 +114,8 @@ def keep_check():
                 dict = text['alternative']
                 for i in dict:
                     s = i['transcript'].lower()
+                    print(s)
                     s = s.split(" ")
-                    # print(s)
                     if any(word in names for word in s):
                         speak_up('Your Name is being called')
                         print("Looks like you are called")

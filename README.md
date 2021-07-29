@@ -2,7 +2,13 @@
 
 ### Setup Instructions : 
 
-- It can find all the google meet links from google classrooms that you are joined to, 
+- **Install Required Packages :**
+
+    ```python
+    pip install -r requirements.txt
+    ```
+
+- **Find all the google meet links from google classrooms that you are joined to**, 
 
     - If you have a single classroom to be entered, run the following command
 
@@ -26,14 +32,14 @@
 
     **The above two command results in generation fo class_schedule.csv file**
 
-- For changing the details of a classroom, run the following command 
+- **For changing the details of a classroom, run the following command**
 
     ```python
     python3 my_google_meet_manager.py -c 
     ```
     > This changes details of a classroom from given menu of class_schedule.csv
  
-- For timetable creation, run the following command 
+- **For timetable creation, run the following command**
 
     ```python
     python3 my_google_meet_manager.py -t 
