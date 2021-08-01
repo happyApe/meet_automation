@@ -2,12 +2,21 @@
 
 ### Setup Instructions : 
 
+
+
 - **Install Required Packages :**
 
     ```python
     pip install -r requirements.txt
     ```
+    
 
+- Requires [**chromedriver**](https://chromedriver.chromium.org/downloads)
+
+    > Setup instructions and guide for Linux/Unix based can be found [here](https://christopher.su/2015/selenium-chromedriver-ubuntu/)
+
+    
+    
 - **Find all the google meet links from google classrooms that you are joined to**, 
 
     - If you have a single classroom to be entered, run the following command
@@ -38,7 +47,7 @@
     python3 my_google_meet_manager.py -c 
     ```
     > This changes details of a classroom from given menu of class_schedule.csv
- 
+
 - **For timetable creation, run the following command**
 
     ```python
@@ -111,5 +120,4 @@ and notify you whenever your name is called
     python attend_for_me.py 
     ```
     > This will notify you with notification (Linux/MacOs) and play a siren sound along with speech output 
-
 
