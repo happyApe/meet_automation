@@ -1,5 +1,9 @@
 # My-Google-Meet-Manager
 
+![](imgs/bot.jpg)
+
+
+
 ### Setup Instructions : 
 
 
@@ -10,7 +14,6 @@
     pip install -r requirements.txt
     ```
     
-
 - Requires [**chromedriver**](https://chromedriver.chromium.org/downloads)
 
     > Setup instructions and guide for Linux/Unix based can be found [here](https://christopher.su/2015/selenium-chromedriver-ubuntu/)
