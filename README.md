@@ -1,8 +1,8 @@
-# My-Google-Meet-Manager
+<h1 align="center"> My-Google-Meet-Manager </h1>
 
-![](imgs/bot.jpg)
-
-
+<p align="center">
+  <img src="imgs/bot.jpg">
+</p>
 
 ### Setup Instructions : 
 
