@@ -66,6 +66,8 @@
 
 ### Running the script : 
 
+
+
     The script will ask you to login once only and then it stores all the cookies of your automated browser to folder named selenium created
     So from next time, you don't need to login again
 
@@ -76,6 +78,8 @@
    > Running with no tags 
 
    > Fetches current day and time and joins respective google meet link via browser, also turns your microphone and camera off 
+
+![](imgs/demo.gif)
 
 ### For scheduling : 
 
