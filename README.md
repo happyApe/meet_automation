@@ -18,8 +18,9 @@
 
     > Setup instructions and guide for Linux/Unix based can be found [here](https://christopher.su/2015/selenium-chromedriver-ubuntu/)
 
-    
-    
+
+
+
 - **Find all the google meet links from google classrooms that you are joined to**, 
 
     - If you have a single classroom to be entered, run the following command
@@ -111,6 +112,16 @@
 
 You can use the [attend_for_me.py](https://github.com/happyApe/meet_automation/blob/master/attend_for_me.py) to have a the script listen in background
 and notify you whenever your name is called 
+
+- Requires **PyAudio** package
+
+  - On Ubuntu-based distro run :
+
+    > sudo apt-get install portaudio19-dev python3-pyaudio 
+
+  - Otherwise simply run : 
+
+    > pip install PyAudio
 
 **Setup steps**:
 
