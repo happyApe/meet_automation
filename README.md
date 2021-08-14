@@ -26,7 +26,7 @@
 
     
 
-- Requires [**espeak **](https://pypi.org/project/python-espeak/) module : 
+- Requires [**espeak**](https://pypi.org/project/python-espeak/) module : 
 
     For Linux based devices run  : 		
 
