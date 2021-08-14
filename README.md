@@ -14,12 +14,25 @@
     pip install -r requirements.txt
     ```
     
+    
+    
 - Requires [**chromedriver**](https://chromedriver.chromium.org/downloads)
 
     > Setup instructions and guide for Linux/Unix based can be found [here](https://christopher.su/2015/selenium-chromedriver-ubuntu/)
 
+     I would recommend using chromium browser as it comes with chromedriver installed, just run :
 
+    > sudo apt install chromium-chromedriver
 
+    
+
+- Requires [**espeak **](https://pypi.org/project/python-espeak/) module : 
+
+    For Linux based devices run  : 		
+
+    > sudo apt install espeak
+
+    
 
 - **Find all the google meet links from google classrooms that you are joined to**, 
 
