@@ -298,34 +298,41 @@ def create_my_timetable(timetable_codes):
         print(df)
         edit_choice = input("\nDo you wish to edit the given timetable ? [Y/N] : ")
         if edit_choice.lower() == 'y':
-            index_range = df.index.values.tolist()
-            choice = int(input("\nEnter the row [index no] which you wish to edit : "))
-            while choice not in index_range : 
-                choice = int(input("Enter the [index no] for row which you wish to edit : "))
-            print()
-            print(df.iloc[choice])
-            print()
+            
+            while True : 
 
-            print("Column Indexes : ")
-            col_indexes = [df.columns.get_loc(c) for c in df.columns if c in df]
-            print(col_indexes)
+                edit_choice = input("Press Enter to continue, Press q to quit : ")
 
-            column_chosen = int(input("Enter column index that you wish to modify : "))
-            while column_chosen not in col_indexes : 
+                if edit_choice == 'q':
+                    sys.exit()
+
+                index_range = df.index.values.tolist()
+                choice = int(input("\nEnter the row [index no] which you wish to edit : "))
+                while choice not in index_range : 
+                    choice = int(input("Enter the [index no] for row which you wish to edit : "))
+                print()
+                print(df.iloc[choice])
+                print()
+
+                print("Column Indexes : ")
+                col_indexes = [df.columns.get_loc(c) for c in df.columns if c in df]
+                print(col_indexes)
+
                 column_chosen = int(input("Enter column index that you wish to modify : "))
+                while column_chosen not in col_indexes : 
+                    column_chosen = int(input("Enter column index that you wish to modify : "))
 
-            column_chosen = df.columns[column_chosen]
+                column_chosen = df.columns[column_chosen]
 
-            new_value = input("Enter the new " + str(column_chosen) + " : ")
-            df.loc[choice,column_chosen] = new_value
-            print()
-            print(df)
-            print()
-            print("Value Updated!")
-            print("Saving to csv file...")
-            df.to_csv("timetable.csv",index = False)
-            print("Done.\n")
-            sys.exit()
+                new_value = input("Enter the new " + str(column_chosen) + " : ")
+                df.loc[choice,column_chosen] = new_value
+                print()
+                print(df)
+                print()
+                print("Value Updated!")
+                print("Saving to csv file...")
+                df.to_csv("timetable.csv",index = False)
+                print("Done.\n")
 
         else : 
             return
@@ -587,6 +594,7 @@ if __name__ == '__main__':
         class_link = input("Enter Google Classroom Link : ")
         # It will fetch the meet link from classroom link
         meet_link = get_meet_link(class_link)
+        print("Fetched Meet Link : ", meet_link)
         add_to_class_schedule(class_name,course_code,class_link,meet_link)
         duplicate_handler()
         print("Run the script with no tags for joining class.")
