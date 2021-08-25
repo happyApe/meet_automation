@@ -3,7 +3,8 @@
 <p align="center">
   <img src="imgs/bot.jpg">
 </p>
-#### Purpose of this project : 
+
+### Purpose of this project : 
 
 Automate the boring part of finding which class to join, fetching the meet link, turning the usual stuff off (mic and cam) and joining. Also helps to not miss any of your classes :) 
 
