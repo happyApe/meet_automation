@@ -22,7 +22,7 @@ Automate the boring part of finding which class to join, fetching the meet link,
     
 - Requires [**chromedriver**](https://chromedriver.chromium.org/downloads)
 
-    > Setup instructions and guide for Linux/Unix based can be found [here](https://christopher.su/2015/selenium-chromedriver-ubuntu/)
+    > Setup instructions and guide for Linux/Unix based can be found [here](https://www.srcmake.com/home/selenium-python-chromedriver-ubuntu)
 
      I would recommend using chromium browser as it comes with chromedriver installed, just run :
 
