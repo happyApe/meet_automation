@@ -126,6 +126,12 @@ def keep_check():
                             os.system('notify-send "You are called in meet probably! Return to meet!!"')
                             notify_twice +=1
                              
+                    if 'roll number 12' in s:
+                        speak_up('Roll Call!')
+                        print("Attendance time",s)
+                        if notify_twice_attendance != 2: 
+                            os.system('notify-send "Your Roll number was called in class"')
+                            notify_twice_attendance+=1
                     if 'attendance' in s : 
                         speak_up('Attendance!')
                         print("Attendance time",s)
