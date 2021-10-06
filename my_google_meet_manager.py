@@ -485,7 +485,7 @@ def turn_off_mic_and_cam(driver):
     try : 
         mic = driver.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div[9]/div[3]/div/div/div[2]/div/div/div[1]/div[1]/div/div[4]/div[1]/div/div/div/span/span/div/div[1]')
     except:
-        mic = driver.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div[9]/div[3]/div/div/div[4]/div/div/div[1]/div[1]/div/div[4]/div[1]/div/div/div/span/span/div/div[1]/div')
+        mic = driver.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div[9]/div[3]/div/div/div[3]/div/div/div[1]/div[1]/div/div[4]/div[1]/div/div/div/div[1]')
     mic.click()
     speak_up("Mic turned off")
     print("Mic Turned off")
@@ -496,7 +496,7 @@ def turn_off_mic_and_cam(driver):
     try:
         cam = driver.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div[9]/div[3]/div/div/div[2]/div/div/div[1]/div[1]/div/div[4]/div[2]/div/div/span/span/div')
     except:
-        cam = driver.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div[9]/div[3]/div/div/div[4]/div/div/div[1]/div[1]/div/div[4]/div[2]/div/div/span/span/div/div')
+        cam = driver.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div[9]/div[3]/div/div/div[3]/div/div/div[1]/div[1]/div/div[4]/div[2]/div/div/div[1]')
     cam.click()
     speak_up("Camera turned off")
     print("Camera Turned off")
