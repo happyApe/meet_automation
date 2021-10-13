@@ -561,8 +561,9 @@ if __name__ == '__main__':
     parser.add_argument('-b','--bulk',action = 'store_true',help = 'Bulk addition of classes from class_details.txt file')
     parser.add_argument('-c','--change',action = 'store_true',help = 'Change details of a classroom from the given menu it shows')
     parser.add_argument('-t','--timetable',action='store_true',help = 'Timetable creation, first asks codes for classrooms and then asks class schedule and saves to timetable.csv')
-    args = parser.parse_args()
-    
+    # args = parser.parse_args()
+    args, unknown = parser.parse_known_args()
+
     if args.timetable:
         # Timtable codes generator by asking the user
         timetable_codes = generate_class_codes()
